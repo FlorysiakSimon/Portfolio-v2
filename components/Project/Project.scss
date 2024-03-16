@@ -1,0 +1,91 @@
+.projet {
+  padding: 1em;
+  border-radius: 25px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+
+  &Card {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 65%;
+    min-height: 300px;
+    margin-bottom: 3em;
+  }
+  &Link {
+    overflow: hidden;
+    color: #ffffffeb;
+    text-decoration: none;
+  }
+  &Img {
+    width: 100%;
+    max-height: 158px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s;
+  }
+  &Title {
+    font-size: 18px;
+    text-align: center;
+    line-height: 2px;
+  }
+  &Description {
+    left: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    min-height: 50px;
+  }
+  &Tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    &Tag {
+      color: var(--text);
+      padding: 4px 2px;
+      border: 1px solid var(--primary);
+      border-radius: 5px;
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      height: 16px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projet {
+    grid-template-columns: repeat(2, 1fr);
+    &Card {
+      width: auto;
+    }
+    &Img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .projet {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 8px 0px;
+    &Card {
+      margin: 10px 0px;
+      flex-basis: 100%;
+    }
+    &Img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+    padding: 7px 20px;
+  }
+}

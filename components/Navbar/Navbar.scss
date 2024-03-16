@@ -1,0 +1,183 @@
+header {
+  position: relative;
+  margin-bottom: 40px;
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  a {
+    color: var(--tertiary);
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+
+    a {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      color: var(--tertiary);
+      font-size: 24px;
+      text-decoration: none;
+      margin-left: 1em;
+      font-weight: 500;
+      line-height: 34px;
+      width: 100%;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary);
+        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      &:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navContainer {
+  max-width: 1024px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animated {
+  &Title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--tertiary);
+  }
+}
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  margin-left: 1em;
+}
+.theme-switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 49px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: var(--primary);
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  bottom: 4px;
+  content: "";
+  height: 18px;
+  left: 2px;
+  position: absolute;
+  transition: 0.4s;
+  width: 18px;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* KEYFRAMES */
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes reverse {
+  0% {
+    left: 4px;
+  }
+  60% {
+    left: 4px;
+    width: 27px;
+  }
+  100% {
+    left: 4px;
+    width: 18px;
+  }
+}
+
+@keyframes switch {
+  0% {
+    left: 4px;
+  }
+  60% {
+    left: 4px;
+    width: 25px;
+  }
+  100% {
+    left: 1px;
+    width: 18px;
+  }
+}
+
+/* RESPONSIV */
+@media screen and (max-width: 768px) {
+  header {
+    nav {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  .about {
+    margin-left: 1.5em;
+  }
+
+  .animatedTitle {
+    font-size: 14px;
+  }
+}

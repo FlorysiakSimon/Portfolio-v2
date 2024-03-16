@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+  --primary: #fcb466;
+  --secondary: #20202380;
+  --tertiary: #ffffffeb;
+  --primary-color: #202023;
+  --text: #ffffffeb;
+}
+
+[data-theme="light"] {
+  --primary: #649dbf;
+  --secondary: #ffffff40;
+  --tertiary: #1a202c;
+  --primary-color: #f0e7db;
+  --text: #1a202c;
+}
+body {
+  background-color: var(--primary-color);
+  padding: 0rem;
+  margin: 0;
+  color: var(--text);
+  transition:
+    background 500ms ease-in-out,
+    color 1000ms ease-in-out;
+}
+
+.mainwork {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+/* LINK FONT AWESOME */
+.link {
+  text-decoration: none;
+  margin: 0 20px;
+  color: inherit;
+  font-size: 25px;
+  &:hover {
+    color: var(--primary);
+    transition: color 500ms ease-in-out;
+  }
+}

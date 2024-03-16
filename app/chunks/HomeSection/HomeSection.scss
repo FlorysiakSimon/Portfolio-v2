@@ -1,0 +1,153 @@
+main {
+  width: 100%;
+}
+
+.mainContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+  position: relative;
+  width: 100vw !important;
+  height: calc(100vh - 200px);
+  justify-content: center;
+  &Title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    &Text {
+      font-size: 16px;
+      text-align: center;
+      & h2 {
+        text-align: center;
+      }
+    }
+    &Photo img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-width: 2px;
+      border-style: solid;
+      border-color: white;
+    }
+    &Bio {
+      max-width: 500px;
+      text-align: justify;
+      border-radius: 5px;
+      backdrop-filter: blur(10px);
+      padding: 1em;
+    }
+  }
+  &Bio img {
+    width: 250px;
+    object-fit: cover;
+    height: 100px;
+  }
+}
+
+.hide {
+  position: absolute;
+  color: #202023;
+}
+
+/* btn */
+.btn {
+  text-align: center;
+  margin-top: 1.5em;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  background-color: var(--primary);
+  padding: 15px 0px;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.btn.effect {
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    content: "\f178";
+    font-family: FontAwesome;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    text-indent: -20px;
+
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
+/* LINK FONT AWESOME */
+.link {
+  text-decoration: none;
+  margin: 0 20px;
+  color: inherit;
+  font-size: 25px;
+  &:hover {
+    color: var(--primary);
+    transition: color 500ms ease-in-out;
+  }
+}
+
+.gitLink {
+  &:before {
+    content: "\f09b";
+    font-family: FontAwesome;
+  }
+}
+.linkedinLink {
+  &:before {
+    content: "\f08c";
+    font-family: FontAwesome;
+  }
+}
+.mail {
+  &:before {
+    content: "\f199";
+    font-family: FontAwesome;
+  }
+}
+
+a span {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+/* Screen smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    margin: 1em auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Screen smaller than 900px */
+@media (max-width: 900px) {
+  .container {
+    margin: 1em auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
