@@ -4,11 +4,12 @@ import { projets } from "@/data/projets";
 import { motion } from "framer-motion";
 import "./Project.scss";
 import Image from "next/image";
+import type { projects } from "@/types/projects";
 
 export default function Project() {
   return (
     <div className="projet">
-      {projets.map((projet, index) => {
+      {projets.map((projet: projects, index: number) => {
         return (
           <motion.article
             className="projetCard"
@@ -27,8 +28,8 @@ export default function Project() {
                 className="projetImg"
                 src={projet.picture}
                 alt={projet.title}
-                width={320}
-                height={158}
+                width={projet.pictureWidth}
+                height={projet.pictureHeight}
               />
             </a>
             <h2 className="projetTitle">{projet.title}</h2>

@@ -19,6 +19,8 @@ export const projets = [
       "multer",
     ],
     picture: "/project/entertainment_app.png",
+    pictureHeight: 951,
+    pictureWidth: 1920,
   },
   {
     title: "Ip address tracker",
@@ -27,6 +29,8 @@ export const projets = [
       "Tracker permettant de localiser quelqu'un en utilisant son address ip",
     tags: ["React", "TypeScript", "axios", "React-leaflet", "Ip-API", "SASS"],
     picture: "/project/ip_tracker.jpg",
+    pictureHeight: 800,
+    pictureWidth: 1440,
   },
   {
     title: "rest-countries-api",
@@ -35,6 +39,8 @@ export const projets = [
       "REST Countries API avec un color theme switcher, search bar et options de filtrage des pays",
     tags: ["React", "react-router", "axios", "api", "SASS"],
     picture: "/project/rest_countries.jpg",
+    pictureHeight: 660,
+    pictureWidth: 900,
   },
   {
     title: "Todo-app",
@@ -42,6 +48,8 @@ export const projets = [
     description: "Todo app avec système de filtre et theme switcher",
     tags: ["Next.js", "Typescript", "tailwind", "next-themes", "uuid"],
     picture: "/project/todo_app.jpg",
+    pictureHeight: 660,
+    pictureWidth: 900,
   },
   {
     title: "E-commerce product page",
@@ -50,6 +58,8 @@ export const projets = [
       "E-commerce product page contenant un caroussel et la possibilité d'ajouté l'objet dans le panier",
     tags: ["React", "SASS"],
     picture: "/project/ecommerce.jpg",
+    pictureHeight: 900,
+    pictureWidth: 1440,
   },
   {
     title: "Les petits plats",
@@ -58,6 +68,8 @@ export const projets = [
       "Algorithme de recherche en JavaScript pour un site de cuisine",
     tags: ["JavaScript", "JSBench", "SASS"],
     picture: "/project/petitsplats.png",
+    pictureHeight: 927,
+    pictureWidth: 1737,
   },
   {
     title: "FishEye",
@@ -65,6 +77,8 @@ export const projets = [
     description: "Site accessible pour une plateforme de photographes",
     tags: ["JavaScript", "CSS", "Accessibility", "ARIA"],
     picture: "/project/fisheye.png",
+    pictureHeight: 704,
+    pictureWidth: 963,
   },
   {
     title: "Kasa",
@@ -72,6 +86,8 @@ export const projets = [
     description: "Application Web avec React et React Router",
     tags: ["React", "React-router", "JavaScript", "SASS", "prop-types"],
     picture: "/project/kasa.jpg",
+    pictureHeight: 947,
+    pictureWidth: 1469,
   },
   {
     title: "SportSee",
@@ -86,6 +102,8 @@ export const projets = [
       "prop-types",
     ],
     picture: "/project/sportsee.png",
+    pictureHeight: 931,
+    pictureWidth: 1308,
   },
   {
     title: "ArgentBank",
@@ -103,6 +121,8 @@ export const projets = [
       "JWToken",
     ],
     picture: "/project/argentbank.png",
+    pictureHeight: 925,
+    pictureWidth: 1483,
   },
   {
     title: "HRnet",
@@ -117,6 +137,8 @@ export const projets = [
       "npm package",
     ],
     picture: "/project/hrnet.png",
+    pictureHeight: 904,
+    pictureWidth: 1358,
   },
   {
     title: "r-modal-sf",
@@ -124,6 +146,8 @@ export const projets = [
     description: "Création d'un composant React modal personnalisable sur npm",
     tags: ["React", "npm", "JavaScript", "Storybook", "prop-types"],
     picture: "/project/rmodal.png",
+    pictureHeight: 687,
+    pictureWidth: 585,
   },
   {
     title: "starter-react-sass-router",
@@ -132,5 +156,7 @@ export const projets = [
       "starter create-react-app avec react-router et sass préinstallé",
     tags: ["React", "react-router", "SASS"],
     picture: "/project/sassreact.png",
+    pictureHeight: 2502,
+    pictureWidth: 1408,
   },
 ];

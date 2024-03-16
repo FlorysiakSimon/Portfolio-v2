@@ -4,9 +4,9 @@ import Project from "@/components/Project/Project";
 export default function Work() {
   return (
     <main className="mainwork">
-      <div>
+      <article>
         <Model />
-      </div>
+      </article>
       <Project />
     </main>
   );
