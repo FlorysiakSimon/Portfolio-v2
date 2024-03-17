@@ -7,18 +7,7 @@ const nextConfig = {
 
 export default nextConfig;
 
-const ContentSecurityPolicy = `
-  default-src 'self' vercel.live;
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live;
-  style-src 'self' 'unsafe-inline';
-  img-src * blob: data:;
-  media-src 'none';
-  connect-src *;
-  font-src 'self';
-`.replace(/\n/g, "");
-
 const securityHeaders = [
-  { key: "Content-Security-Policy", value: ContentSecurityPolicy },
   { key: "Referrer-Policy", value: "origin-when-cross-origin" },
   { key: "X-Frame-Options", value: "DENY" },
   { key: "X-Content-Type-Options", value: "nosniff" },
