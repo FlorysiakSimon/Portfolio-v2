@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
         <nav>
           <Link href="/works">Works</Link>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/CV_Simon_Florysiak_V2.pdf" target="_blank" rel="noopener noreferrer">
             CV
           </a>
           <div className="theme-switch-wrapper">
